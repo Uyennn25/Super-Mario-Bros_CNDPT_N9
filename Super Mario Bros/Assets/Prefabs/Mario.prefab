@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 5996926126593606894}
   - component: {fileID: 2884093543458393440}
   - component: {fileID: 977569635890010959}
+  - component: {fileID: 8453296144262249713}
   - component: {fileID: 6602425368888149287}
+  - component: {fileID: 5594665403646340615}
+  - component: {fileID: 6547020586013747003}
   m_Layer: 3
   m_Name: Mario
   m_TagString: Player
@@ -100,6 +103,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &8453296144262249713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625475998710992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f84ba2dcf3f3b1498e2efe82106e9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallRenderer: {fileID: 5550610828418460697}
+  bigRenderer: {fileID: 7572918762248199444}
+  deathAnimation: {fileID: 5594665403646340615}
 --- !u!114 &6602425368888149287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,10 +130,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fec43916cafd05429111ade7a0922df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
   moveSpeed: 8
   maxJumHeight: 5
   maxJumpTime: 1
+--- !u!114 &5594665403646340615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625475998710992}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e978524ebf952f44ad6a0a97701f132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2474159617669952887}
+  deadSprite: {fileID: 21300000, guid: 711ff1acc35254749a11f9f9f80c280c, type: 3}
+--- !u!114 &6547020586013747003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625475998710992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf88763ad4e9814dbf679b466e73da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: -1, y: 0}
+  oldSpeed: 0
 --- !u!1 &1201451702304639053
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +264,7 @@ MonoBehaviour:
   idle: {fileID: 21300000, guid: 5ef76aeacb5400a44936c8cf2c7f5b24, type: 3}
   jump: {fileID: 21300000, guid: e1aae653608dc0a4785cd7310b4d57b7, type: 3}
   slide: {fileID: 21300000, guid: e6db0220a9b58634aa809e78f3673c66, type: 3}
-  run: {fileID: 21300000, guid: ee13f37c45fb244499d67f317dd69d8a, type: 3}
+  run: {fileID: 5414958301352145254}
 --- !u!114 &5414958301352145254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79e3d8fea96f5145a2a07b6fc5699a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: ee13f37c45fb244499d67f317dd69d8a, type: 3}
+  - {fileID: 21300000, guid: 9f1369d021824904c9db41eb6df30878, type: 3}
+  - {fileID: 21300000, guid: b25a58dea5b121b4d85811c2d0d53a33, type: 3}
+  - {fileID: 21300000, guid: 9f1369d021824904c9db41eb6df30878, type: 3}
   framerate: 0.16666667
 --- !u!1 &1946505798295330170
 GameObject:
@@ -337,7 +386,7 @@ MonoBehaviour:
   idle: {fileID: 21300000, guid: 2ae2bdbc4e419d64b820c755c5b7ca5a, type: 3}
   jump: {fileID: 21300000, guid: 31e65484e0dd4904bbc534c2d6f2cfd2, type: 3}
   slide: {fileID: 21300000, guid: 22a39f2698a832146a1c97535033b673, type: 3}
-  run: {fileID: 21300000, guid: 46b20929c3dfa7e4fb248661d510420b, type: 3}
+  run: {fileID: 63443164507139550}
 --- !u!114 &63443164507139550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,5 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79e3d8fea96f5145a2a07b6fc5699a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 46b20929c3dfa7e4fb248661d510420b, type: 3}
+  - {fileID: 21300000, guid: 66a95dd2e6c396e4abbd2a2588ac06d1, type: 3}
+  - {fileID: 21300000, guid: 035126005663ce44eb3366ec326dbbe2, type: 3}
+  - {fileID: 21300000, guid: 66a95dd2e6c396e4abbd2a2588ac06d1, type: 3}
   framerate: 0.16666667
