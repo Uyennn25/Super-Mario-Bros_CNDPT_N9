@@ -1,12 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class EntityMovement : MonoBehaviour
 {
-    private float speed;
+    public float speed;
     public Vector2 direction = Vector2.left;
     
     private new Rigidbody2D rigidbody;
@@ -37,6 +33,7 @@ public class EntityMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         velocity.x = direction.x * speed;
         velocity.y += Physics2D.gravity.y * Time.fixedDeltaTime;
         

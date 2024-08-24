@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerSpriteRenderer : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer { get; private set; }
     private PlayerMovement movement;
 
     public Sprite idle;
@@ -24,8 +24,14 @@ public class PlayerSpriteRenderer : MonoBehaviour
         spriteRenderer.enabled = true;
     }
 
+    private void OnEnable()
+    {
+        spriteRenderer.enabled = true;
+    }
+
     private void OnDisable()
     {
+       
         spriteRenderer.enabled = false;
         run.enabled = false;
     }

@@ -115,8 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f84ba2dcf3f3b1498e2efe82106e9b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallRenderer: {fileID: 5550610828418460697}
-  bigRenderer: {fileID: 7572918762248199444}
+  smallPlayerSpriteRenderer: {fileID: 5550610828418460697}
+  bigPlayerSpriteRenderer: {fileID: 7572918762248199444}
   deathAnimation: {fileID: 5594665403646340615}
 --- !u!114 &6602425368888149287
 MonoBehaviour:
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf88763ad4e9814dbf679b466e73da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   direction: {x: -1, y: 0}
   oldSpeed: 0
 --- !u!1 &1201451702304639053
@@ -311,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 1946505798295330170}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
