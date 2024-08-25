@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,8 +9,14 @@ public class DeathAnimation : MonoBehaviour
 
     private void Reset()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        
+        try
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+        }
     }
 
     private void OnEnable()

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     
     private void Awake()
     {
+        Debug.Log("Called awake");
         if (Instance != null)
         {
             DestroyImmediate(gameObject);
@@ -36,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Application.targetFrameRate = 60;
+       Application.targetFrameRate = 60;
        NewGame(); 
     }
 
@@ -45,14 +46,13 @@ public class GameManager : MonoBehaviour
         lives = 3;
         coins = 0; 
         
-        LoadLevel(1,2);
+        LoadLevel(1,1);
     }
 
     private void LoadLevel(int world, int stage)
     {
         this.world = world;
         this.stage = stage;
-
         SceneManager.LoadScene($"{world}-{stage}");
     }
 

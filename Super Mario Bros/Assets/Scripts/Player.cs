@@ -1,5 +1,5 @@
 using System.Collections;
-
+using System;
 using UnityEngine;
 using Random = System.Random;
 
@@ -46,9 +46,9 @@ public class Player : MonoBehaviour
         smallPlayerSpriteRenderer.enabled = false;
         bigPlayerSpriteRenderer.enabled = false;
         deathAnimation.enabled = true;
-        
         GameManager.Instance.ResetLevel(3f);
     }
+
     public void Grow()
     {
         
