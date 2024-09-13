@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5996926126593606894}
+  - component: {fileID: 6602425368888149287}
   - component: {fileID: 2884093543458393440}
   - component: {fileID: 977569635890010959}
   - component: {fileID: 8453296144262249713}
-  - component: {fileID: 6602425368888149287}
   - component: {fileID: 5594665403646340615}
   - component: {fileID: 6547020586013747003}
   m_Layer: 3
@@ -39,6 +39,20 @@ Transform:
   - {fileID: 7611496260666444043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6602425368888149287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625475998710992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fec43916cafd05429111ade7a0922df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  jumpForce: 50
 --- !u!50 &2884093543458393440
 Rigidbody2D:
   serializedVersion: 4
@@ -51,10 +65,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 100
+  m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 10
   m_Material: {fileID: 6200000, guid: fbf59975fa23bc94ca1ea187e45fcafc, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -118,21 +132,6 @@ MonoBehaviour:
   smallPlayerSpriteRenderer: {fileID: 5550610828418460697}
   bigPlayerSpriteRenderer: {fileID: 7572918762248199444}
   deathAnimation: {fileID: 5594665403646340615}
---- !u!114 &6602425368888149287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52625475998710992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fec43916cafd05429111ade7a0922df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
-  maxJumHeight: 5
-  maxJumpTime: 1
 --- !u!114 &5594665403646340615
 MonoBehaviour:
   m_ObjectHideFlags: 0

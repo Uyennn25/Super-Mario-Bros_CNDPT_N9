@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolingManager : SingleTon<PoolingManager>
+public class PoolingManager : Singleton<PoolingManager>
 {
     public GameObject parent;
     private string poolName = "PoolObject";

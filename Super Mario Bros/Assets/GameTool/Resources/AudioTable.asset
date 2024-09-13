@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393ca411f55e24c449d5c22099822a0a, type: 3}
+  m_Name: AudioTable
+  m_EditorClassIdentifier: 
+  musicTracksSerializers:
+  - key: Splash
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: bbb2ad2075deb494ab192765808658a0, type: 3}
+  - key: Lobby
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 13845f55cf70ea04d8bef2f915d5f7f2, type: 3}
+  - key: Game
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 8903387e1f1b4d54fa9c035fd00cfd46, type: 3}
+  soundTracksSerializers:
+  - key: Jump
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 11564f78389eb6c4a9d0aa32b89c9802, type: 3}
+  - key: ButtonClick
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 11564f78389eb6c4a9d0aa32b89c9802, type: 3}
+  - key: Shoot
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 4d57daee29ea2bc47ba1f82852b01bbb, type: 3}
+  - key: BulletHitWoodSound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: c702148c2dc70fc458e54383c11115d5, type: 3}
+  - key: BulletHitStoneSound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 44a6236d3f66c564a9f105870f128997, type: 3}
+  - key: BulletHitMetalSound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 41e3129b6dadb514693f6b55760d6321, type: 3}
+  - key: PlayerDeadSound
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 4cf9e48805515674d8874d71a48540b6, type: 3}

@@ -1,5 +1,5 @@
+using GameTool;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HomeUI : MonoBehaviour
@@ -9,12 +9,12 @@ public class HomeUI : MonoBehaviour
 
     private void Awake()
     {
-       MenuChoice();
+        MenuChoice();
     }
 
     private void Start()
     {
-        playNewGame.onClick.AddListener((() => PlayNewGame()));
+        playNewGame.onClick.AddListener(PlayNewGame);
     }
 
     private void MenuChoice()
@@ -33,14 +33,13 @@ public class HomeUI : MonoBehaviour
 
     public void OpenLevel(int levelID)
     {
-        string levelName = "Level" + levelID;
-        SceneManager.LoadScene(levelName);
+        LoadSceneManager.Instance.LoadSceneLevel(levelID);
     }
 
     public void PlayNewGame()
     {
-        SceneManager.LoadScene("Level1");
-        PlayerPrefs.SetInt("UnlockLevel",1);
+        LoadSceneManager.Instance.LoadSceneLevel(1);
+        PlayerPrefs.SetInt("UnlockLevel", 1);
         PlayerPrefs.Save();
         MenuChoice();
     }
