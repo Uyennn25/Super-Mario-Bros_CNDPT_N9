@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9d3c3707c7e4dd7a5bb691aee62467, type: 3}
+  m_Name: AudioTable
+  m_EditorClassIdentifier: 
+  musicTracksSerializers:
+  - key: BG_Home
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 4d892d11ed60eae45b5fee2e00aec8ce, type: 3}
+      resourcePaths:
+      - Audio/01. Welcome to Super Mario World!
+    isDuplicated: 0
+  - key: GameMusic
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 301929f9122b80840bce8f5f008acc79, type: 3}
+      resourcePaths:
+      - Audio/smb_world_clear
+    isDuplicated: 0
+  soundTracksSerializers:
+  - key: ButtonClick
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 7cd210dd44681c447b1317eb2e615a5a, type: 3}
+      resourcePaths:
+      - Audio/click
+    isFrequently: 1
+    isDuplicated: 0
+  - key: PassLevel
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 40a42f6023460984ebe27bdaed9b0479, type: 3}
+      resourcePaths:
+      - Audio/passLevel
+    isFrequently: 0
+    isDuplicated: 0
+  - key: GameOver
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: e40f7ea27e9f69146b6f14dae4fa36f0, type: 3}
+      resourcePaths:
+      - Audio/smb_gameover
+    isFrequently: 0
+    isDuplicated: 0
+  - key: Jump
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: f1b25f6294dff824e882dbc873318ffc, type: 3}
+      resourcePaths:
+      - Audio/smb_jump-small
+    isFrequently: 1
+    isDuplicated: 0
+  - key: PlayerDie
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: d429f4915383b8840acc3d01b7a53ab5, type: 3}
+      resourcePaths:
+      - Audio/smb_mariodie
+    isFrequently: 0
+    isDuplicated: 0
+  - key: CollectCoin
+    track:
+      listAudio:
+      - {fileID: 8300000, guid: 7cd210dd44681c447b1317eb2e615a5a, type: 3}
+      resourcePaths:
+      - Audio/click
+    isFrequently: 0
+    isDuplicated: 0
